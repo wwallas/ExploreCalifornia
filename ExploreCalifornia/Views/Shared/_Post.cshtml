@@ -1,0 +1,15 @@
+﻿@inject ExploreCalifornia.Models.FormattingService Format
+@model ExploreCalifornia.Models.Post
+
+
+
+<article>
+    <h1>@Model.Title</h1>
+    <div>
+        Posted <span>@Format.AsReadableDate(Model.Posted)</span> by <span>@Model.Author</span>
+       
+    </div>
+    <div>
+        @Model.Body
+    </div>
+</article>
